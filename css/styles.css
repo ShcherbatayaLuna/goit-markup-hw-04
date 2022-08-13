@@ -29,7 +29,6 @@ fiil-icons: #afb1b8;
 }
 body {
   color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
   font-family: "Roboto", sans-serif;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -49,7 +48,7 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
 }
 .header-page {
   display: flex;
@@ -244,8 +243,14 @@ p {
 .features-box {
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
   background-color: var(--bcg-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .features-part > .text {
   font-size: 14px;
@@ -253,10 +258,6 @@ p {
 }
 
 /* Чем мы занимаемся */
-.section.features-work,
-.section.work {
-  background-color: var(--primary-background-color);
-}
 .work-title,
 .title,
 .team-title {
@@ -327,20 +328,26 @@ p {
 .social-item + .social-item {
   margin-left: 10px;
 }
-.social-item {
+.persons-link {
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
+
+  color: var(--fill-icons);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.social-item:hover,
-.social-item:focus {
+.persons-link:hover,
+.persons-link:focus {
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 .social-links {
   width: 20px;
   height: 20px;
-  fill: var(--fill-icons);
+  fill: currentColor;
 }
 .social-links:hover,
 .social-links:focus {
@@ -355,26 +362,31 @@ p {
   margin-left: 30px;
 }
 .client {
-  display: block;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--fill-icons);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
+
+  color: var(--fill-icons);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .client:hover,
 .client:focus {
+  color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 .client-logo {
   width: 106px;
   height: 60px;
-  fill: var(--fill-icons);
+  fill: currentColor;
 }
 .client-logo:hover,
 .client-logo:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* Подвал */
@@ -438,17 +450,12 @@ p {
 .join {
   display: flex;
 }
-.join-item {
+.join-link {
+  color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
-.join-links {
-  fill: var(--white-color);
 }
 
 /* Основа Портфолио */
-.portfolio {
-  background-color: var(--primary-background-color);
-}
 h1 {
   margin-top: 0;
   margin-bottom: 0;
