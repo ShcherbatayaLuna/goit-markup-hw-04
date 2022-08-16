@@ -10,3 +10,7 @@
   "arrowParens": "avoid",
   "proseWrap": "always"
 }
+// "files.associations": {
+//   "*.xml": "html",
+//   "*.svg": "html"
+// }
